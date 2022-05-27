@@ -1,0 +1,302 @@
+<html>
+
+<head>
+  <script src="../javascript/jquery.min.js"></script>
+  <script src="../javascript/jquery.validate.min.js"></script>
+  <script src="../javascript/javascript.js"></script>
+  <script src="../javascript/custommethod.js"></script>
+  <link rel="stylesheet" href="../css/stylesheet.css" />
+</head>
+
+<body>
+  <fieldset>
+    <div class="formdiv" id="formdiv"   >
+
+      <form class="myform" id="myform" action="data1.html" method = "get" target="_blank">
+        <div id="name-data">
+          <label for="name" class = "required">Name: </label>
+          <input type="text" id = "name1" name="name"/><br>
+        </div><br><br>
+        <div id="age-data">
+          <label for="age" class = "required">Age: </label>
+          <input type="number" id="age1" name = "age" min="8" max="25"/>
+        </div><br><br>
+        <div id="email-data">
+          <label for="email" class = "required">E-mail: </label>
+          <input type="text" id="email1" name="email" placeholder="abc@tntra.io"/>
+        </div><br><br>
+        <div id="phonenum-data">
+          <label for="phone_num" class = "required">Phone Number: </label>
+          <input type="tel" id="phone_num1" name="phone_num" placeholder="(000)-00-00000"/>
+        </div><br><br>
+        <div id="gender-data">
+         Gender: <input type="radio" id="Male" name="gender" class = "gender" value="male"/>
+          <label for="Male">Male</label>
+          <input type="radio" id="Female" name="gender" class = "gender" value="female"/>
+          <label for="Female">Female</label>
+          <input type="radio" id="others" name="gender" class = "gender" value="others"/>
+          <label for="others">Others</label>
+          <label id="label10" class="labels" ></label>
+        </div><br><br>
+        <div class="input">
+          <input type="checkbox" id="check_box" value="yes"/>
+          <label for="check_box">NEXT-DAY CONFIGURATION</label><br>
+          <label class="label" id="label11">Set Next-Day Pick-up time</label>
+        </div><br>
+        <div class="time-selection">
+          <div class = "day_rows">
+          <div id = "sunday" class = "days">
+          <input type="checkbox" class = "checkbox" id="sunday1" value="Sunday"/>
+          <label for="sunday1">Sunday</label></div>
+          <div class = "days">
+            <select id="time1" class = "time" name="time1">
+             <option value="">-Select Pick-up Time-</option> 
+              <option value="00.00">00.00</option>
+              <option value="01.00">01.00</option>
+              <option value="02.00">02.00</option>
+              <option value="03.00">03.00</option>
+              <option value="04.00">04.00</option>
+              <option value="05.00">05.00</option>
+              <option value="06.00">06.00</option>
+              <option value="07.00">07.00</option>
+              <option value="08.00">08.00</option>
+              <option value="09.00">09.00</option>
+              <option value="10.00">10.00</option>
+              <option value="11.00">11.00</option>
+              <option value="12.00">12.00</option>
+              <option value="13.00">13.00</option>
+              <option value="14.00">14.00</option>
+              <option value="15.00">15.00</option>
+              <option value="16.00">16.00</option>
+              <option value="17.00">17.00</option>
+              <option value="18.00">18.00</option>
+              <option value="19.00">19.00</option>
+              <option value="20.00">20.00</option>
+              <option value="21.00">21.00</option>
+              <option value="22.00">22.00</option>
+              <option value="23.00">23.00</option> 
+            </select>
+            <label id = "label110"></label>
+          </div></div>
+          <br><br>
+        <div class = "day_rows">
+          <div class = "days">
+          <input type="checkbox" id="monday" class = "checkbox" value="Monday"/>
+          <label for="monday">Monday</label></div>
+          <div class = "days">
+            <select id="time2" class = "time" name="time2">
+              <option value="">-Select Pick-up Time-</option>
+              <option value="00.00">00.00</option>
+              <option value="01.00">01.00</option>
+              <option value="02.00">02.00</option>
+              <option value="03.00">03.00</option>
+              <option value="04.00">04.00</option>
+              <option value="05.00">05.00</option>
+              <option value="06.00">06.00</option>
+              <option value="07.00">07.00</option>
+              <option value="08.00">08.00</option>
+              <option value="09.00">09.00</option>
+              <option value="10.00">10.00</option>
+              <option value="11.00">11.00</option>
+              <option value="12.00">12.00</option>
+              <option value="13.00">13.00</option>
+              <option value="14.00">14.00</option>
+              <option value="15.00">15.00</option>
+              <option value="16.00">16.00</option>
+              <option value="17.00">17.00</option>
+              <option value="18.00">18.00</option>
+              <option value="19.00">19.00</option>
+              <option value="20.00">20.00</option>
+              <option value="21.00">21.00</option>
+              <option value="22.00">22.00</option>
+              <option value="23.00">23.00</option>
+            </select>
+            <label id = "label111"></label>
+          </div></div>
+          <br><br>
+          <div class = "day_rows">
+          <div class = "days">
+          <input type="checkbox" id="tuesday" class = "checkbox" value="Tuesday"/>
+          <label for="tuesday">Tuesday</label></div>
+          <div class = "days">
+            <select id="time3" class = "time" name="time3">
+              <option value="">-Select Pick-up Time-</option>
+              <option value="00.00">00.00</option>
+              <option value="01.00">01.00</option>
+              <option value="02.00">02.00</option>
+              <option value="03.00">03.00</option>
+              <option value="04.00">04.00</option>
+              <option value="05.00">05.00</option>
+              <option value="06.00">06.00</option>
+              <option value="07.00">07.00</option>
+              <option value="08.00">08.00</option>
+              <option value="09.00">09.00</option>
+              <option value="10.00">10.00</option>
+              <option value="11.00">11.00</option>
+              <option value="12.00">12.00</option>
+              <option value="13.00">13.00</option>
+              <option value="14.00">14.00</option>
+              <option value="15.00">15.00</option>
+              <option value="16.00">16.00</option>
+              <option value="17.00">17.00</option>
+              <option value="18.00">18.00</option>
+              <option value="19.00">19.00</option>
+              <option value="20.00">20.00</option>
+              <option value="21.00">21.00</option>
+              <option value="22.00">22.00</option>
+              <option value="23.00">23.00</option>
+            </select>
+            <label id = "label112"></label>
+          </div></div><br><br>
+          <div class = "day_rows">
+          <div class = "days">
+          <input type="checkbox" id="wednesday" class = "checkbox" value="Wednesday"/>
+          <label for="wednesday">Wednesday</label></div>
+          <div class = "days">
+            <select id="time4" class = "time" name="time4">
+              <option value="">-Select Pick-up Time-</option>
+              <option value="00.00">00.00</option>
+              <option value="01.00">01.00</option>
+              <option value="02.00">02.00</option>
+              <option value="03.00">03.00</option>
+              <option value="04.00">04.00</option>
+              <option value="05.00">05.00</option>
+              <option value="06.00">06.00</option>
+              <option value="07.00">07.00</option>
+              <option value="08.00">08.00</option>
+              <option value="09.00">09.00</option>
+              <option value="10.00">10.00</option>
+              <option value="11.00">11.00</option>
+              <option value="12.00">12.00</option>
+              <option value="13.00">13.00</option>
+              <option value="14.00">14.00</option>
+              <option value="15.00">15.00</option>
+              <option value="16.00">16.00</option>
+              <option value="17.00">17.00</option>
+              <option value="18.00">18.00</option>
+              <option value="19.00">19.00</option>
+              <option value="20.00">20.00</option>
+              <option value="21.00">21.00</option>
+              <option value="22.00">22.00</option>
+              <option value="23.00">23.00</option>
+            </select>
+            <label id = "label113"></label>
+          </div></div><br><br>
+          <div class = "day_rows">
+          <div class = "days">
+          <input type="checkbox" id="thursday" class = "checkbox" value="Thursday"/>
+          <label for="thursday">Thursday</label></div>
+          <div class = "days">
+            <select id="time5" class = "time" name="time5">
+              <option value="">-Select Pick-up Time-</option>
+              <option value="00.00">00.00</option>
+              <option value="01.00">01.00</option>
+              <option value="02.00">02.00</option>
+              <option value="03.00">03.00</option>
+              <option value="04.00">04.00</option>
+              <option value="05.00">05.00</option>
+              <option value="06.00">06.00</option>
+              <option value="07.00">07.00</option>
+              <option value="08.00">08.00</option>
+              <option value="09.00">09.00</option>
+              <option value="10.00">10.00</option>
+              <option value="11.00">11.00</option>
+              <option value="12.00">12.00</option>
+              <option value="13.00">13.00</option>
+              <option value="14.00">14.00</option>
+              <option value="15.00">15.00</option>
+              <option value="16.00">16.00</option>
+              <option value="17.00">17.00</option>
+              <option value="18.00">18.00</option>
+              <option value="19.00">19.00</option>
+              <option value="20.00">20.00</option>
+              <option value="21.00">21.00</option>
+              <option value="22.00">22.00</option>
+              <option value="23.00">23.00</option>
+            </select>
+            <label id = "label114"></label>
+          </div></div><br><br>
+          <div class = "day_rows">
+          <div class = "days">
+          <input type="checkbox" id="friday" class = "checkbox" value="Friday"/>
+          <label for="friday">Friday</label></div>
+          <div class = "days">
+            <select id="time6" class = "time" name="time6">
+              <option value="">-Select Pick-up Time-</option>
+              <option value="00.00">00.00</option>
+              <option value="01.00">01.00</option>
+              <option value="02.00">02.00</option>
+              <option value="03.00">03.00</option>
+              <option value="04.00">04.00</option>
+              <option value="05.00">05.00</option>
+              <option value="06.00">06.00</option>
+              <option value="07.00">07.00</option>
+              <option value="08.00">08.00</option>
+              <option value="09.00">09.00</option>
+              <option value="10.00">10.00</option>
+              <option value="11.00">11.00</option>
+              <option value="12.00">12.00</option>
+              <option value="13.00">13.00</option>
+              <option value="14.00">14.00</option>
+              <option value="15.00">15.00</option>
+              <option value="16.00">16.00</option>
+              <option value="17.00">17.00</option>
+              <option value="18.00">18.00</option>
+              <option value="19.00">19.00</option>
+              <option value="20.00">20.00</option>
+              <option value="21.00">21.00</option>
+              <option value="22.00">22.00</option>
+              <option value="23.00">23.00</option>
+            </select>
+            <label id = "label115"></label>
+          </div></div><br><br>
+          <div class = "day_rows">
+          <div class = "days">
+          <input type="checkbox" id="saturday" class = "checkbox" value="Saturday"/>
+          <label for="saturday">Saturday</label></div>
+          <div class = "days">
+            <select id="time_S" class = "time" name="time7">
+              <option value="">-Select Pick-up Time-</option>
+              <option value="00.00">00.00</option>
+              <option value="01.00">01.00</option>
+              <option value="02.00">02.00</option>
+              <option value="03.00">03.00</option>
+              <option value="04.00">04.00</option>
+              <option value="05.00">05.00</option>
+              <option value="06.00">06.00</option>
+              <option value="07.00">07.00</option>
+              <option value="08.00">08.00</option>
+              <option value="09.00">09.00</option>
+              <option value="10.00">10.00</option>
+              <option value="11.00">11.00</option>
+              <option value="12.00">12.00</option>
+              <option value="13.00">13.00</option>
+              <option value="14.00">14.00</option>
+              <option value="15.00">15.00</option>
+              <option value="16.00">16.00</option>
+              <option value="17.00">17.00</option>
+              <option value="18.00">18.00</option>
+              <option value="19.00">19.00</option>
+              <option value="20.00">20.00</option>
+              <option value="21.00">21.00</option>
+              <option value="22.00">22.00</option>
+              <option value="23.00">23.00</option>
+            </select>
+            <label id = "label116"></label>
+          <br>
+        </div>
+      </div>
+        </div>
+        <input type="submit" id="submitbtn" value="Submit" onclick = "passvalues();"/><br>
+      </form>
+
+    </div>
+  </fieldset>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      formvalidate.init();
+    });
+  </script>
+</body>
+
+</html>
