@@ -1,0 +1,115 @@
+body{
+  background-color: white;
+  position: relative;
+}
+fieldset{
+  background-color: rgb(204, 207, 210);
+  width:700px;
+  position: absolute;
+  left:500px;
+}
+.required::after{
+  content: "*";
+  color: red;
+}
+input[type = "text"],[type= "tel"],[type = "number"]{
+  padding: 10px;
+  border-color: gray;
+  width: 230px;
+
+}
+input[type = submit]{
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 10px 22px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  left:600px;
+}
+
+.labels{
+  color:red;
+  font-size: smaller;
+}
+.time{
+  position: absolute;
+  left:230px;
+  margin-bottom: 50px;
+  top:350px;
+}
+
+.label{
+  color: rgba(46, 44, 44, 0.712);
+  font-size: smaller;
+  padding-left: 25px;
+}
+.error{
+  color:red;
+  font-size: smaller;
+
+
+}
+#time1-error{
+  position: absolute;
+  left:400px;
+  top:420px;
+}
+#time2-error{
+  position: absolute;
+  left:400px;
+  top:480px;
+}
+#time3-error{
+  position: absolute;
+  left:400px;
+  top:530px;
+}
+#time4-error{
+  position: absolute;
+  left:400px;
+  top:590px;
+}
+#time5-error{
+  position: absolute;
+  left:400px;
+  top:650px;
+}
+#time6-error{
+  position: absolute;
+  left:400px;
+  top:710px;
+}
+#time_S-error{
+  position: absolute;
+  left:400px;
+  top:770px;
+}
+#gender-error{
+  position: absolute;
+  left:300px;
+  top:315px;
+}
+#time1{
+  top:420px;
+}
+#time2{
+  top:480px;
+}
+#time3{
+  top:530px;
+}
+#time4{
+  top:590px;
+}
+#time5{
+  top:650px;
+}
+#time6{
+  top:710px;
+}
+#time_S{
+  top:770px;
+}
